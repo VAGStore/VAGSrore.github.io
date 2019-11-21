@@ -1,0 +1,104 @@
+.menu {
+  position: fixed;
+  background-color: transparent;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1%;
+  margin-left: 2.5%;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  left: -100vw;
+}
+.menu-link {
+  display: block;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 2;
+  margin-top: 20px;
+  left: 3%;
+  border-radius: 20%;
+}
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  display: block;
+  z-index: 2;
+  height: 4px;
+  width: 36px;
+  position: absolute;
+  background-color: #000;
+  left: 50%;
+  margin-left: -18px;
+  top: 50%;
+  margin-top: -3px;
+}
+.menu-link span:before {
+  -webkit-transition: all 0.8s;
+          transition: all 0.8s;
+  content: '';
+  margin-top: -13px;
+}
+.menu-link span:after {
+  -webkit-transition: all 0.8s;
+          transition: all 0.8s;
+  content: '';
+  margin-top: 9px;
+}
+.menu-link_active span {
+  background-color: transparent;
+}
+.menu-link_active span:before {
+  -webkit-transform: rotate(-225deg);
+      -ms-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  margin-top: 0;
+  background-color: #fff;
+}
+.menu-link_active span:after {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin-top: 0;
+  background-color: #fff;
+}
+.menu_active {
+  left: 0;
+  margin-left: 0;
+  background-color:rgba(0,0,0,.8);
+  height: 100%; 
+}
+.menu ul {
+  padding: 0;
+  list-style: none;
+  text-align: center
+  /* margin-top: 25% ; */
+}
+.menu ul a {
+  display: block;
+  line-height: 2;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+.menu ul a:hover {
+  background-color: #32A0C4;
+  width: 100%;
+}

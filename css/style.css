@@ -1,0 +1,362 @@
+@font-face{font-family: "VWHeadlineOT-Black";src: url(../fonts/VWHeadlineOT-Black.ttf);font-style: normal;font-weight: normal;}
+@font-face{font-family: "VWHeadlineOT-Book";src: url(../fonts/VWHeadlineOT-Book.ttf);font-style: normal;font-weight: normal;}
+@font-face{font-family: "VWHeadlineOT-Semibold";src: url(../fonts/VWHeadlineOT-Semibold.ttf);font-style: normal;font-weight: normal;}
+
+*{
+	box-sizing: border-box;
+	font-family: VWHeadlineOT-Black;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #E6E6E6;
+
+}
+p{
+	margin: 0;
+}
+
+/* первый экран */
+
+.main{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	height: 100vh;
+	min-height: 600px;
+	background-image: url(../img/1.jpg) ;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main-description{
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	/* flex-direction: column; для адаптива */
+	align-items: center;
+	width: 88%;
+	height: 10vh;
+	right: 0;
+}
+
+.headline-text{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.headline-text:hover{
+	color: #5CB8DF;
+	text-decoration:none;
+
+	
+}
+.main-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+.main-text h1{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 50px;
+}
+.main-text p{
+	font-size: 28px;
+}
+.main-text span{
+	font-size: 22px;
+	margin: 0;
+}
+.main-text span::after{
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.main-text span::before{
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.main-button{
+	height: 15vh;
+	transition: all 0.3s ease;
+}
+.main-button a{
+	display: block;
+	background-color: #0099DA;
+	color: #fff;
+	font-family: VWHeadlineOT-Black;
+	padding: 15px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+
+}
+.main-button a:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #0099DA;
+	transform: translateY(5px);
+}
+
+ /* секция о нас */
+
+.about{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+}
+.about-wrap{
+	width: 88%;
+ }
+.section-title{
+ 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+ }
+ .section-title h2{
+ 	font-size: 30px;
+ 	text-transform: uppercase;
+ }
+.about-description{
+ 	display: -webkit-flex;
+	display: flex;
+	justify-content: space-evenly;
+	/* flex-direction: column; для адаптива */
+	align-items: center;
+	margin-bottom: 20px;
+}
+.about-description_text p{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	height: 30vh;
+	width: 40vw;
+	text-align: justify;
+	font-family: VWHeadlineOT-Book;
+	line-height: 27px;
+	font-size: 16px;
+}
+.about_description_img img{
+ 	/* height: 40vh; */
+	width: 40vw;
+	margin-left: 20px;
+ 	
+}
+
+/* Основные виды работ */
+
+.servise{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	background-color: #D8D8D8;
+
+}
+.wrap{
+	width: 88%;
+}
+
+ .wrap-slider{
+ 	display: -webkit-flex;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+ }
+ .slider{
+ 	display: -webkit-flex;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	width: 88%;
+	
+
+ }
+ .slider_item{
+ 	width: 310px !important ;
+ 	text-align: center;
+ 	padding: 10px;
+ 	margin-bottom: 20px;
+ 	background-color: #fff;
+ 	border-radius: 10px;
+
+ }
+ .slider_item img{
+ 	width: 280px;
+ 	height: 310px;
+ 	margin: auto;
+ 	border-radius: 10px;
+ }
+ .slider_item p{
+ 	margin-top: 15px;
+ 	margin-bottom: 15px;
+ 	font-family: VWHeadlineOT-Book;
+
+ }
+ .slider_item span{
+ 	color: #0099DA;
+ }
+
+/* форма обратной связи */
+
+ .feedback{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	
+
+}
+.wrap{
+	width: 88%;
+}
+.feedback-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	justify-content: center;
+	align-items: center;
+	/* text-align: center; */
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    margin: 0 0 40px 0;
+    background-color: rgb(0,153,218,.6);
+    border-radius: 20px;
+}
+.content form{
+	text-align: center;
+
+}
+.input-wrapper{
+	display: inline-block;
+}
+.input-wrapper input{
+	width: 300px;
+	height: 50px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 18px;
+	font-family:VWHeadlineOT-Black;
+	border: none;
+	padding: 0 10px;
+	color: #0099DA;
+
+}
+#name{
+	text-transform: capitalize;
+}
+.phone-wrapper{
+	margin-left: 20px;
+}
+
+::-webkit-input-placeholder {color:#0099DA; opacity: .5}
+::-moz-placeholder          {color:#0099DA; opacity: .5}/* Firefox 19+ */
+:-moz-placeholder           {color:#0099DA; opacity: .5}/* Firefox 18- */
+:-ms-input-placeholder      {color:#0099DA; opacity: .5}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.email-wrapper{
+	margin-bottom: 20px;
+}
+.input-message textarea{
+	width: 700px;
+	height: 200px;
+	padding: 10px 30px;
+	border-radius:30px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-family:VWHeadlineOT-Black;
+	color: #0099DA;
+}
+.btn {
+  height: 50px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: #f1f5f8;
+  border: 0;
+  color: #0099DA;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 0.07em;
+  border-radius: 6px;
+  box-shadow: 0px 12px 20px 0px rgba(123, 140, 210, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 5px 10px 0px rgba(123, 140, 210, 0.3);
+}
+.btn:focus {
+  outline: 0;
+}
+
+/*Товары*/
+
+.goods{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	background-color: #D8D8D8;
+	
+}
+
+/*Карта*/
+
+.wrap-maps{
+	width: 100%;
+	
+}
+
+/* footer */
+
+footer{
+	height: 20vh;
+	background-color: #0099DA;
+}
